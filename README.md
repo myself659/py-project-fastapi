@@ -182,3 +182,19 @@ The job runs in an ubuntu-latest\* (runs-on) environment and executes the follow
 [选择作业的运行器](https://docs.github.com/zh/actions/using-jobs/choosing-the-runner-for-a-job)
 
 [run linter failed](https://github.com/myself659/py-project-fastapi/actions/runs/10109003492/job/27956016609)
+
+### [act](https://github.com/nektos/act)
+
+```
+scoop install  act
+```
+
+```
+act
+```
+
+```
+Error: Error response from daemon: Head "https://registry-1.docker.io/v2/library/node/manifests/16-buster-slim": EOF
+```
+
+act 有一个限制必备是 public 的 repo 才可以。
