@@ -1,6 +1,6 @@
 # py-project-fastapi
 
-## part 1
+## part1 (GitHub, IDE, Python environment, configuration, app)
 
 ### setup project in github
 
@@ -75,3 +75,39 @@ peotry add  "uvicorn[standard]"
 ```
 
 http://localhost:9000/docs
+
+## part2 (Formatting, Linting, Command management, CI)
+
+### setup lint
+
+```
+poetry add --group lint isort black flake8 mypy
+```
+
+```
+> isort . --check
+Skipped 2 files
+> black . --check
+would reformat src/example_app/app.py
+Oh no! 💥 💔 💥
+1 file would be reformatted, 1 file would be left unchanged.
+> flake8 .
+...
+> mypy .
+Success: no issues found in 2 source files
+```
+
+```
+(fastapitemplate-py3.9) I:\pyenv\py-project-fastapi>flake8  src
+src\example_app\__init__.py:3:22: W292 no newline at end of file
+src\example_app\app.py:31:73: W292 no newline at end of file
+
+(fastapitemplate-py3.9) I:\pyenv\py-project-fastapi>flake8 src
+```
+
+```
+(fastapitemplate-py3.9) I:\pyenv\py-project-fastapi>make format
+Makefile:3: *** missing separator.  Stop.
+```
+
+Makefile 需要使用 tab 而不是 space
