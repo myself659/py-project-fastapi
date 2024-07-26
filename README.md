@@ -1,6 +1,6 @@
 # py-project-fastapi
 
-![lint](https://github.com/myself659/py-project-fastapi/workflows/lint/badge.svg?branch=main)
+## Overview [![push](https://github.com/myself659/py-project-fastapi/workflows/lint/badge.svg?branch=main)](https://github.com/myself659/py-project-fastapi/actions)
 
 ## part1 (GitHub, IDE, Python environment, configuration, app)
 
