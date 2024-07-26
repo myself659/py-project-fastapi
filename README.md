@@ -221,4 +221,22 @@ poetry add --group test pytest-cov
 
 [4 Proven Ways To Define Pytest PythonPath and Avoid Module Import Errors](https://pytest-with-eric.com/introduction/pytest-pythonpath/)
 
-默认 pythonpath 是当前目录。
+pythonpath 默认是当前目录。
+
+## part4 (Documentation, CI/CD)
+
+### mkdocs
+
+```
+poetry add --group docs mkdocs mkdocs-material
+```
+
+```
+mkdocs build
+```
+
+server by `Go Live`
+
+```
+
+```
