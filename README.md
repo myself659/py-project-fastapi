@@ -2,6 +2,10 @@
 
 ## Overview [![lint](https://github.com/myself659/py-project-fastapi/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/myself659/py-project-fastapi/actions)
 
+![Testing](https://github.com/myself659/py-project-fastapi/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/myself659/py-project-fastapi/actions/workflows/test.yml)
+
+# python-project-johannes
+
 ## part1 (GitHub, IDE, Python environment, configuration, app)
 
 ### setup project in github
@@ -206,3 +210,15 @@ act 有一个限制必备是 public 的 repo 才可以。
 ### workflow status badge
 
 [Adding a workflow status badge](https://docs.github.com/zh/actions/monitoring-and-troubleshooting-workflows/monitoring-workflows/adding-a-workflow-status-badge)
+
+### pytest
+
+```
+poetry add --group test respx pytest-asyncio trio
+
+poetry add --group test pytest-cov
+```
+
+[4 Proven Ways To Define Pytest PythonPath and Avoid Module Import Errors](https://pytest-with-eric.com/introduction/pytest-pythonpath/)
+
+默认 pythonpath 是当前目录。
