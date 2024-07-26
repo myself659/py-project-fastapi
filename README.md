@@ -148,10 +148,10 @@ jobs:
       - name: Install poetry
         run: pipx install poetry==1.8.3
       # set-up python with cache
-      - name: Setup Python 3.9.9
+      - name: Setup Python 3.9
         uses: actions/setup-python@v4
         with:
-          python-version: "3.9.9"
+          python-version: "3.9"
           cache: "poetry"
       # install requirements (including dev dependencies)
       - name: Install requirements
@@ -176,3 +176,5 @@ The job runs in an ubuntu-latest\* (runs-on) environment and executes the follow
 - Install only the requirements that are needed to run the different linters with poetry install --only lint \*\*
 
 - Running the linters with the make command: poetry run make lint Please note, that running the tools is only possible in the virtualenv, which we can access through poetry run.
+
+[](https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json)
