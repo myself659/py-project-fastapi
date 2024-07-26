@@ -111,3 +111,68 @@ Makefile:3: *** missing separator.  Stop.
 ```
 
 Makefile 需要使用 tab 而不是 space
+
+### lint.yml
+
+we give the workflow a name:
+
+```
+name: Linting
+```
+
+define on which signals/events, this workflow should be started:
+
+```
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+```
+
+git pull 与 git push
+
+```
+jobs:
+  Linting:
+    runs-on: ubuntu-latest
+    steps:
+      # check-out repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+      # install poetry
+      - name: Install poetry
+        run: pipx install poetry==1.8.3
+      # set-up python with cache
+      - name: Setup Python 3.9.9
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9.9"
+          cache: "poetry"
+      # install requirements (including dev dependencies)
+      - name: Install requirements
+        run: poetry install --only lint
+      # run linters
+      - name: Run linters
+        run: |
+          set -o pipefail
+          poetry run make lint
+```
+
+按定义顺序执行。
+
+The job runs in an ubuntu-latest\* (runs-on) environment and executes the following steps:
+
+- checkout the repository using the branch name that is stored in the default environment variable ${{ github.head_ref }} . GitHub action: checkout@v3
+
+- install Poetry with pipx because it’s pre-installed on all GitHub runners. If you have a self-hosted runner in e.g. Azure, you’d need to install it yourself or use an existing GitHub action that does it for you.
+
+- Setup the python environment and caching the virtualenv based on the content in the poetry.lock file. GitHub action: setup-python@v4
+
+- Install only the requirements that are needed to run the different linters with poetry install --only lint \*\*
+
+- Running the linters with the make command: poetry run make lint Please note, that running the tools is only possible in the virtualenv, which we can access through poetry run.
