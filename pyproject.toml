@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "fastapitemplate"
+version = "0.1.0"
+description = ""
+authors = ["myself659-ai <myself659@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/myself659/py-project-fastapi"
+repository = "https://github.com/myself659/py-project-fastapi"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+httpx = "^0.27.0"
+fastapi = "^0.111.1"
+uvicorn = {extras = ["standard"], version = "^0.30.3"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
