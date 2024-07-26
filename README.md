@@ -137,7 +137,7 @@ git pull 与 git push
 ```
 jobs:
   Linting:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.4
     steps:
       # check-out repo
       - name: Checkout repository
@@ -178,3 +178,5 @@ The job runs in an ubuntu-latest\* (runs-on) environment and executes the follow
 - Running the linters with the make command: poetry run make lint Please note, that running the tools is only possible in the virtualenv, which we can access through poetry run.
 
 [](https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json)
+
+[选择作业的运行器](https://docs.github.com/zh/actions/using-jobs/choosing-the-runner-for-a-job)
