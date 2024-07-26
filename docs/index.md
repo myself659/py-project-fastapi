@@ -1,4 +1,4 @@
-This site contains the project documentation for the `Python Project Johannes`
+This site contains the project documentation for the `Python Project fastapi`
 
 ## Table of Contents
 
