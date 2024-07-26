@@ -180,3 +180,5 @@ The job runs in an ubuntu-latest\* (runs-on) environment and executes the follow
 [](https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json)
 
 [选择作业的运行器](https://docs.github.com/zh/actions/using-jobs/choosing-the-runner-for-a-job)
+
+[run linter failed](https://github.com/myself659/py-project-fastapi/actions/runs/10109003492/job/27956016609)
