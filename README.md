@@ -1,5 +1,7 @@
 # py-project-fastapi
 
+![lint](https://github.com/myself659/py-project-fastapi/.github/workflows/lint.yml/badge.svg?branch=main)
+
 ## part1 (GitHub, IDE, Python environment, configuration, app)
 
 ### setup project in github
@@ -198,3 +200,9 @@ Error: Error response from daemon: Head "https://registry-1.docker.io/v2/library
 ```
 
 act 有一个限制必备是 public 的 repo 才可以。
+
+## part3 Part (Testing, CI)
+
+### workflow status badge
+
+[Adding a workflow status badge](https://docs.github.com/zh/actions/monitoring-and-troubleshooting-workflows/monitoring-workflows/adding-a-workflow-status-badge)
