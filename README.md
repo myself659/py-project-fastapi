@@ -242,3 +242,9 @@ server by `Go Live`
 ```
 mkdocs gh-deploy -m "docs: update documentation" -v --force
 ```
+
+### format
+
+[Formatting Python in VS Code](https://code.visualstudio.com/docs/python/formatting)
+
+[Supercharge your Python Code with Ruff](https://medium.com/bitgrit-data-science-publication/supercharge-your-python-code-with-ruff-4c75b890ed40)

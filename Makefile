@@ -23,6 +23,9 @@ unit-tests-cov:
 unit-tests-cov-fail:
 	@pytest --cov=src --cov-report term-missing --cov-report=html --cov-fail-under=80
 
+ruff:
+	@ruff check
+	@ruff format
 ##@ Documentation
 docs-build: ## build documentation locally
 	@mkdocs build
