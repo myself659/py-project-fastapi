@@ -4,6 +4,8 @@
 
 ![Testing](https://github.com/myself659/py-project-fastapi/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/myself659/py-project-fastapi/actions/workflows/test.yml)
 
+[![Documentation](https://github.com/myself659/py-project-fastapi/actions/workflows/pages.yml/badge.svg?branch=main)](https://github.com/myself659/py-project-fastapi/actions/workflows/pages.yml)
+
 # python-project-johannes
 
 ## part1 (GitHub, IDE, Python environment, configuration, app)
@@ -238,5 +240,5 @@ mkdocs build
 server by `Go Live`
 
 ```
-
+mkdocs gh-deploy -m "docs: update documentation" -v --force
 ```
