@@ -335,3 +335,23 @@ docker run -p 9000:80 -it --rm  py-project-fastapi
 
 http://localhost:9000/docs
 ```
+
+```
+docker tag py-project-fastapi:latest ghcr.io/myself659/py-project-fastapi:latest
+
+ docker push ghcr.io/myself659/py-project-fastapi:latest
+```
+
+### package
+
+create a Personal access tokens: CR_PAT
+
+```
+docker login ghcr.io -u myself659 -p ..
+
+docker tag py-project-fastapi:latest ghcr.io/myself659/py-project-fastapi:latest
+
+docker push ghcr.io/myself659/py-project-fastapi:latest
+```
+
+package connects to the repository.
