@@ -280,7 +280,7 @@ git show v0.1.0
 git push origin v0.1.0
 ```
 
-### release
+### semantic-release
 
 ```
  poetry add --group semver python-semantic-release
@@ -289,3 +289,9 @@ git push origin v0.1.0
 [Automating Versioning and Releases Using Semantic Release](https://medium.com/agoda-engineering/automating-versioning-and-releases-using-semantic-release-6ed355ede742)
 
 [Semantic Release cmd](https://python-semantic-release.readthedocs.io/en/latest/commands.html)
+
+### auto release
+
+profile create GH_TOKEN.
+
+Repository secrets for GH_TOKEN.
