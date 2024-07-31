@@ -325,3 +325,13 @@ docker run -p 9000:80 -it --rm  py-project-fastapi
 
 http://localhost:9000/docs
 ```
+
+```
+docker build --file Dockerfile --tag py-project-fastapi:latest --target production .
+```
+
+```
+docker run -p 9000:80 -it --rm  py-project-fastapi
+
+http://localhost:9000/docs
+```
