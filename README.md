@@ -301,3 +301,27 @@ profile create GH_TOKEN.
 Repository secrets for GH_TOKEN.
 
 ## part6 (Containerisation, Docker, CI/CD)
+
+### docker
+
+```
+docker build --file Dockerfile --tag py-project-fastapi:latest .
+```
+
+```
+docker run -it --rm py-project-fastapi
+```
+
+```
+docker run -it --rm py-project-fastapi /bin/bash
+```
+
+```
+root@068315bab695:/app/src/example_app# uvicorn app:app --host 0.0.0.0 --port 80 --workers 1
+```
+
+```
+docker run -p 9000:80 -it --rm  py-project-fastapi
+
+http://localhost:9000/docs
+```
