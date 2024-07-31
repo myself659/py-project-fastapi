@@ -19,9 +19,12 @@ nav: []
 use_directory_urls: false
 
 plugins:
+  - search:
   - mkdocstrings:
       handlers:
         python:
           paths: [src]
+  - render_swagger:
+      title: API Reference
 
 repo_url: https://github.com/myself659/py-project-fastapi
