@@ -247,6 +247,12 @@ mkdocs gh-deploy -m "docs: update documentation" -v --force
 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
+对 github action 开放对该 repository 的写权限。
+
+```
+By default, the GITHUB_TOKEN only has restricted access. If we head over to our GitHub repository → Settings → Actions → General → And scroll down to Workflow permissions, we’ll see that it’s currently set to Read repository contents and package permissions.
+```
+
 ### format
 
 [Formatting Python in VS Code](https://code.visualstudio.com/docs/python/formatting)

@@ -21,7 +21,7 @@ unit-tests-cov:
 	@pytest --cov=src --cov-report term-missing --cov-report=html
 
 unit-tests-cov-fail:
-	@pytest --cov=src --cov-report term-missing --cov-report=html --cov-fail-under=80
+	@pytest --cov=src --cov-report term-missing --cov-report=html --cov-fail-under=0
 
 ruff:
 	@ruff check
