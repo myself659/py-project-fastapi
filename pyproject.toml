@@ -36,6 +36,10 @@ mkdocs-material = "^9.5.30"
 mkdocstrings = {extras = ["python"], version = "^0.25.2"}
 mkdocs-render-swagger-plugin = "^0.1.2"
 
+
+[tool.poetry.group.semver.dependencies]
+python-semantic-release = "^9.8.6"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
@@ -80,3 +84,15 @@ addopts = "-p no:cacheprovider" # deactivating pytest caching.
 exclude_lines = [
     'if __name__ == "__main__":'
 ]
+
+
+[tool.semantic_release]
+branch = "main"
+version_variable = "src/example_app/__init__.py:__version__"
+version_toml = ["pyproject.toml:tool.poetry.version"]
+version_source = "tag"
+commit_version_number = true # required for version_source = "tag"
+tag_commit = true
+upload_to_pypi = false
+upload_to_release = false
+hvcs = "github" # gitlab is also supported

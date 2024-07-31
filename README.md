@@ -258,3 +258,34 @@ By default, the GITHUB_TOKEN only has restricted access. If we head over to our 
 [Formatting Python in VS Code](https://code.visualstudio.com/docs/python/formatting)
 
 [Supercharge your Python Code with Ruff](https://medium.com/bitgrit-data-science-publication/supercharge-your-python-code-with-ruff-4c75b890ed40)
+
+## part5 Versioning & Releases, CI/CD
+
+### tag
+
+```
+git tag -a v0.1.0 -m "version v0.1.0"
+```
+
+```
+❯ git tag
+v0.1.0
+```
+
+```
+git show v0.1.0
+```
+
+```
+git push origin v0.1.0
+```
+
+### release
+
+```
+ poetry add --group semver python-semantic-release
+```
+
+[Automating Versioning and Releases Using Semantic Release](https://medium.com/agoda-engineering/automating-versioning-and-releases-using-semantic-release-6ed355ede742)
+
+[Semantic Release cmd](https://python-semantic-release.readthedocs.io/en/latest/commands.html)
