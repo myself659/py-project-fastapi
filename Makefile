@@ -44,13 +44,13 @@ current-version: ## returns the current version
 	@semantic-release version --print-last-released
 
 next-version: ## returns the next version
-	@semantic-release print-version --next
+	@semantic-release version --print-tag
 
 current-changelog: ## returns the current changelog
-	@semantic-release changelog --released
+	@semantic-release changelog
 
 next-changelog: ## returns the next changelog
-	@semantic-release changelog --unreleased
+	@semantic-release changelog
 
 publish-noop: ## publish command (no-operation mode)
-	@semantic-release publish --noop
+	@semantic-release publish
