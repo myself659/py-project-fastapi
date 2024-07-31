@@ -30,6 +30,9 @@ ruff:
 docs-build: ## build documentation locally
 	@mkdocs build
 
+create_openapi: ## create openapi.json
+	@python scripts/create_openapi_json.py
+
 docs-deploy: ## build & deploy documentation to "gh-pages" branch
 	@mkdocs gh-deploy -m "docs: update documentation" -v --force
 

@@ -243,6 +243,10 @@ server by `Go Live`
 mkdocs gh-deploy -m "docs: update documentation" -v --force
 ```
 
+```
+GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
 ### format
 
 [Formatting Python in VS Code](https://code.visualstudio.com/docs/python/formatting)
